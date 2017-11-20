@@ -48,7 +48,7 @@ print 'Real Mem Total (ps):\t%.3f MB' % ( rssTotal/1024/1024 )
 
 
 headers = {"Content-type": "application/json",
-            "access_token": "Zs0nTQB-ujOSV0KmEoPhBx2E6-Ab_GKO"}
+            "access_token": "2QElaypzKUgiroyYIMu8oIXNy3ZPateI"}
 url = 'http://api.masterdatanode.com/mac/memory/save/'
 
 data = {'data' :  [{'wired': ( vmStats["Pages wired down"]/1024/1024 ), 'active': ( vmStats["Pages active"]/1024/1024 ), 'inactive': ( vmStats["Pages inactive"]/1024/1024 ), 'free' : ( vmStats["Pages free"]/1024/1024 )  , 'used' : ( rssTotal/1024/1024 )}]}

@@ -11,5 +11,5 @@ number=$(ps -ax | grep  Applications | wc -l )
 if [ $number -gt 0 ]
     then
         echo Total running process $number;
-        curl -H "access_token : Zs0nTQB-ujOSV0KmEoPhBx2E6-Ab_GKO" -H "Content-Type : application/json" --data "{ \"data\" : [{ \"process\" : \"$number\" }]}" http://api.masterdatanode.com/mac/process/save/
+        curl -H "access_token : 2QElaypzKUgiroyYIMu8oIXNy3ZPateI" -H "Content-Type : application/json" --data "{ \"data\" : [{ \"process\" : \"$number\" }]}" http://api.masterdatanode.com/mac/process/save/
 fi
